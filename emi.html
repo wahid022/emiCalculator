@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Loan Calculator</title>
+    <link rel="stylesheet" type="text/css" href="emi.css">
+</head>
+  
+<body>
+    <div class="calculator">
+        <h1>Loan Calculator</h1>
+  
+        <!-- Calling Calculate function defined in emi.js -->
+        <p>Amount (₹)     :
+            <input id="amount" type="number" 
+            onchange="Calculate()">
+        </p>
+  
+        <p>Interest Rate  :
+            <input id="rate" type="number" 
+            onchange="Calculate()">
+        </p>
+  
+        <p>Months to Pay :
+            <input id="months" type="number" 
+            onchange="Calculate()">
+        </p>
+        
+
+        <button id="button">Calculate</button>
+
+        <h2 id="total"></h2>
+    </div>
+  
+    <script type="text/javascript" src="emi.js"> </script>
+</body>
+  
+</html>
